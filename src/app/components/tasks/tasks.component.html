@@ -1,0 +1,19 @@
+<mat-card class="tasks-card">
+    <mat-card-header>
+      <mat-card-title>
+        Hello
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-card *ngFor="let task of tasks; let i = index" class="tasks" id={{task}} (click)="markfinished(task)" (dblclick)="unmarkfinished(task)">
+        {{task}}
+        <mat-card-content class="delete-container">
+        <button mat-stroked-button class="edit-button" (click)="unmarkfinished(task)" (click)="OpenEditTaskDialog(tasks,i)">Edit</button>
+        <button mat-stroked-button class="delete-button" (click)="deleteTask(i)">Delete</button>
+    </mat-card-content>
+      </mat-card>
+    </mat-card-content>
+    <mat-card-actions class="add-container">
+      <button mat-fab class='add-button' (click)="OpenAddTaskDialog(tasks)">+</button> 
+    </mat-card-actions>
+  </mat-card>

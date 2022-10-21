@@ -1,0 +1,41 @@
+.main-tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.tasks-card {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    min-width: 50vw;
+    min-height: 50vh;
+}
+
+.lists-card {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    min-width: 12.5vw;
+    min-height: 50vh;
+}
+
+.add-container {
+    display: flex;
+    margin-top: auto;
+    justify-content: right;
+}
+.add-button {
+    background-color: plum;
+    font-size: 50px;
+    color: white;
+}
+
+.tasks {
+    margin: 5px;
+}
+
+.finished {
+    text-decoration: line-through;
+}

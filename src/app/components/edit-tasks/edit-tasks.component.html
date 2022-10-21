@@ -1,0 +1,27 @@
+<mat-card class="lists-card">
+    <mat-card-header>
+        <mat-card-title>Edit Task</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form>
+            <mat-form-field>
+                <input
+                    matInput
+                    [(ngModel)]="task"
+                    [ngModelOptions]="{standalone: true}"
+                    placeholder="Task"
+                    type="text"
+                    >
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions class="add-container">
+        <button
+        mat-fab 
+        class='add-button'
+        (click)="edittask()"
+        >
+        +
+    </button>
+    </mat-card-actions>
+</mat-card>
