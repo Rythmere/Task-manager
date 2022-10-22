@@ -14,13 +14,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { EditTasksComponent } from './components/edit-tasks/edit-tasks.component';
+import { ListsComponent } from './components/lists/lists.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AddTaskComponent,
     TasksComponent,
-    EditTasksComponent
+    EditTasksComponent,
+    ListsComponent
   ],
   imports: [
     BrowserModule,
